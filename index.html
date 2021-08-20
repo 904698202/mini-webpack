@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script src="./src/index.js"></script> -->
+  <!-- 打包方法：自执行函数（参数为依赖图） -->
+  <!-- <script>
+  (function(list){
+    // 模拟require方法
+    function require(file) {
+      var exports = {};
+      (function (exports,code) {
+        eval(code);
+      })(exports ,list[file]);
+      return exports;
+    };
+    require('index.js')
+  })({
+    "index.js":"var add = require('add.js').default;console.log(add(1,3))",
+    "add.js":"exports.default = function(a,b){return a+b}"
+  });
+    
+    
+    // 调用
+    // var add = require("./add.js").default;
+    // console.log(add(1,3));
+
+    
+  </script> -->
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
